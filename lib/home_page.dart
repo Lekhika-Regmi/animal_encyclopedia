@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'animal_add_page.dart';
 import 'animal_list_page.dart'; // <- Make sure this import is correct
 
 final appTitleProvider = Provider<String>((ref) {
@@ -30,6 +31,17 @@ class HomePage extends ConsumerWidget {
                 );
               },
               child: const Text('Browse Animals'),
+            ),
+            SizedBox(height: 15.0),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to AnimalListPage
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => AnimalAddPage()),
+                );
+              },
+              child: const Text('Add Animals'),
             ),
           ],
         ),

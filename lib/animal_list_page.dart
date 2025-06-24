@@ -20,8 +20,6 @@ class AnimalListPage extends ConsumerWidget {
           // Example: Filtered by mammals
           // final filtered = ref.watch(filteredByGroupProvider('Mammals'));
           final filtered = animals; // no filtering applied
-          print('Filtered animal IDs: ${filtered.map((a) => a.id).toList()}');
-
           return ListView.builder(
             itemCount: filtered.length,
             itemBuilder: (context, index) {

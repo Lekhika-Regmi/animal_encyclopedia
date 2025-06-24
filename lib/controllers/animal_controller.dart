@@ -16,6 +16,10 @@ class AnimalController {
     return _service.fetchAnimals();
   }
 
+  Future<void> addAnimal(Animal animal) {
+    return _service.addAnimal(animal);
+  }
+
   List<Animal> filterByGroup(List<Animal> animals, String group) {
     return animals
         .where((a) => a.group.toLowerCase() == group.toLowerCase())

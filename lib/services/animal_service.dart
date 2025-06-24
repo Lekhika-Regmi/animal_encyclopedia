@@ -4,8 +4,8 @@ import '../models/animal.dart';
 
 class AnimalService {
   final Dio _dio = Dio();
-  // final String baseUrl = 'http://localhost:3000'; // Update port if needed
-  final String baseUrl = 'http://10.0.2.2:3000';
+  final String baseUrl = 'http://localhost:3000'; // Update port if needed
+  // final String baseUrl = 'http://10.0.2.2:3000';
 
   Future<List<Animal>> fetchAnimals() async {
     try {
@@ -26,5 +26,21 @@ class AnimalService {
   Future<Animal> fetchAnimalDetail(int id) async {
     final response = await _dio.get('$baseUrl/animals/$id');
     return Animal.fromJson(response.data);
+  }
+
+  Future<void> addAnimal(Animal animal) async {
+    try {
+      await _dio.post(
+        '$baseUrl/animals',
+        data: {
+          'name': animal.name,
+          'description': animal.description,
+          'group': animal.group,
+          'diet': animal.diet,
+        },
+      );
+    } catch (e) {
+      throw Exception('Failed to add animal: $e');
+    }
   }
 }
