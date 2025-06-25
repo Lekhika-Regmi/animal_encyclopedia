@@ -4,8 +4,8 @@ import '../models/animal.dart';
 
 class AnimalService {
   final Dio _dio = Dio();
-  final String baseUrl = 'http://localhost:3000'; // Update port if needed
-  // final String baseUrl = 'http://10.0.2.2:3000';
+  //final String baseUrl = 'http://localhost:3001';
+  final String baseUrl = 'http://10.0.2.2:3001';
 
   Future<List<Animal>> fetchAnimals() async {
     try {
