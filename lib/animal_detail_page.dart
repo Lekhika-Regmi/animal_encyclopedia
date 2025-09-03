@@ -27,7 +27,7 @@ class AnimalDetailPage extends ConsumerWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: const Text('Animal Detail'),
+            title: const Text('Animal Detail Page'),
             backgroundColor: Colors.transparent,
             elevation: 0,
           ),
