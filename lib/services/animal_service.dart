@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import '../models/animal.dart';
 
@@ -7,7 +8,7 @@ class AnimalService {
   //final String baseUrl = 'http://localhost:3001';
   final String baseUrl = 'http://10.0.2.2:3001';
 
-  Future<List<Animal>> fetchAnimals() async {
+  Future<List<Animal>> fetchAnimalsService() async {
     try {
       final response = await _dio.get('$baseUrl/animals');
 
@@ -24,6 +25,7 @@ class AnimalService {
   }
 
   Future<Animal> fetchAnimalDetail(int id) async {
+    _dio.interceptors.add(PrettyDioLogger());
     final response = await _dio.get('$baseUrl/animals/$id');
     return Animal.fromJson(response.data);
   }

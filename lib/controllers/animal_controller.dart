@@ -13,7 +13,7 @@ class AnimalController {
   AnimalController(this._service);
 
   Future<List<Animal>> fetchAnimals() {
-    return _service.fetchAnimals();
+    return _service.fetchAnimalsService();
   }
 
   Future<void> addAnimal(Animal animal) {
