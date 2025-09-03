@@ -1,0 +1,269 @@
+{
+  "uuid": "250f830d-3532-4bed-b69a-8c39a9b30eed",
+  "lastMigration": 33,
+  "name": "Animals (copy)",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "8770cd15-d497-48c7-9657-d7c9b73d7d63",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals",
+      "responses": [
+        {
+          "uuid": "0f4ed582-f9f5-4f7d-9acc-33c405598172",
+          "body": "[\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"Lion\",\r\n    \"description\": \"The lion is a big cat...\",\r\n    \"group\": \"Mammals\",\r\n    \"diet\": \"Carnivorous\"\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"name\": \"Frog\",\r\n    \"description\": \"Lives in water and land...\",\r\n    \"group\": \"Amphibians\",\r\n    \"diet\": \"Carnivorous\"\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"name\": \"Parrot\",\r\n    \"description\": \"Colorful bird that mimics sounds.\",\r\n    \"group\": \"Birds\",\r\n    \"diet\": \"Herbivorous\"\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"name\": \"Bear\",\r\n    \"description\": \"Large omnivorous mammal...\",\r\n    \"group\": \"Mammals\",\r\n    \"diet\": \"Omnivorous\"\r\n  }\r\n]\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "609e7bbb-55a0-43f8-b174-3b2864eaf564",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "animals",
+      "responses": [
+        {
+          "uuid": "b1881017-33ec-4660-a99b-5bf344469689",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "fc2a962b-fa2f-4ad1-9d3d-306a51867f89",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/1",
+      "responses": [
+        {
+          "uuid": "7e1a822f-5a62-471c-bb33-7bf9b0ef75f3",
+          "body": "{\r\n  \"id\": 1,\r\n  \"name\": \"Lion\",\r\n  \"description\": \"The lion is a big cat...\",\r\n  \"group\": \"Mammals\",\r\n  \"diet\": \"Carnivorous\"\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "0d8f6b94-d5b4-4d70-894d-97cd70f9f3ff",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/2",
+      "responses": [
+        {
+          "uuid": "47eabe43-814a-4639-a355-d6f0a8a09acb",
+          "body": " {\r\n    \"id\": 2,\r\n    \"name\": \"Frog\",\r\n    \"description\": \"Lives in water and land...\",\r\n    \"group\": \"Amphibians\",\r\n    \"diet\": \"Carnivorous\"\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "9dcb2129-3b7f-445c-9223-725028dced3e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/3",
+      "responses": [
+        {
+          "uuid": "01451330-9b33-4a89-b898-14d6ec46475f",
+          "body": " {\r\n    \"id\": 3,\r\n    \"name\": \"Parrot\",\r\n    \"description\": \"Colorful bird that mimics sounds.\",\r\n    \"group\": \"Birds\",\r\n    \"diet\": \"Herbivorous\"\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c3e3be86-e146-49ff-b515-e7952b083488",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/4",
+      "responses": [
+        {
+          "uuid": "3f22bd1d-fe2f-40d4-ad9f-326e1567791f",
+          "body": " {\r\n    \"id\": 4,\r\n    \"name\": \"Bear\",\r\n    \"description\": \"Large omnivorous mammal...\",\r\n    \"group\": \"Mammals\",\r\n    \"diet\": \"Omnivorous\"\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "8770cd15-d497-48c7-9657-d7c9b73d7d63"
+    },
+    {
+      "type": "route",
+      "uuid": "609e7bbb-55a0-43f8-b174-3b2864eaf564"
+    },
+    {
+      "type": "route",
+      "uuid": "fc2a962b-fa2f-4ad1-9d3d-306a51867f89"
+    },
+    {
+      "type": "route",
+      "uuid": "0d8f6b94-d5b4-4d70-894d-97cd70f9f3ff"
+    },
+    {
+      "type": "route",
+      "uuid": "9dcb2129-3b7f-445c-9223-725028dced3e"
+    },
+    {
+      "type": "route",
+      "uuid": "c3e3be86-e146-49ff-b515-e7952b083488"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
